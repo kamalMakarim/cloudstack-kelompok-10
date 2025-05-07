@@ -164,4 +164,3 @@ service nfs-kernel-server restart
 ```bash
 apt-get install qemu-kvm cloudstack-agent -y
 ```
-# NOTE : UDAH SAMPE CLOUDSTACK AGENT
