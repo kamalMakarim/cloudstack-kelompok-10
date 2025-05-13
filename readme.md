@@ -142,7 +142,7 @@ systemctl status mysql
 ```
 Deply database sebagai root dan membuat cloud user dengan password cloud
 ```bash
-cloudstack-setup-databases cloud:cloud@localhost --deploy-as=root:Pa$$w0rd -i 192.168.104.24
+cloudstack-setup-databases cloud:cloud@localhost --deploy-as=root:uiauiaui -i 192.168.106.162
 ```
 confgiure primary and secondary storage
 ```bash
@@ -164,3 +164,9 @@ service nfs-kernel-server restart
 ```bash
 apt-get install qemu-kvm cloudstack-agent -y
 ```
+
+cloudmonkey set url http://192.168.106.162:8080/client/api
+#example: cloudmonkey set url http://192.168.106.162:8080/client/api
+cloudmonkey set apikey uiauiaui
+cloudmonkey set secretkey uiauiaui
+cloudmonkey sync
