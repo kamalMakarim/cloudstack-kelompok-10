@@ -405,7 +405,7 @@ cloudmonkey --version
 
 ```bash
 cloudmonkey set url [IP Address:8080]/client/api
-#example: cloudmonkey set url http://192.168.104.24:8080/client/api
+#example: cloudmonkey set url http://192.168.106.162:8080/client/api
 cloudmonkey set apikey [apikey]
 cloudmonkey set secretkey [secretkey]
 cloudmonkey sync
