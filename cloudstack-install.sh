@@ -35,7 +35,7 @@ echo "network:
       dhcp6: false
       parameters:
         stp: false
-        forward-delay: 0" | sudo tee /etc/netplan/01-netcfg.yaml > /dev/null && sudo chmod 600 /etc/netplan/01-netcfg.yaml
+        forward-delay: 0" | sudo tee /etc/netplan/50-cloud-init.yaml > /dev/null && sudo chmod 600 /etc/netplan/50-cloud-init.yaml
 
 
 sudo -i
