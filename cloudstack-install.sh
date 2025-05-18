@@ -38,7 +38,6 @@ echo "network:
         forward-delay: 0" | sudo tee /etc/netplan/50-cloud-init.yaml > /dev/null && sudo chmod 600 /etc/netplan/50-cloud-init.yaml
 
 
-sudo -i
 netplan generate
 netplan apply
 
