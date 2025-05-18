@@ -138,10 +138,10 @@ apt-get install iptables-persistent -y
 #just answer yes yes
 
 cloudstack-setup-management
-systemctl status cloudstack-management
+#systemctl status cloudstack-management
 
 snap install cloudmonkey
-cloudmonkey --version
+#cloudmonkey --version
 
 #ask the user toinput the keys
 echo "Please input your API key"
