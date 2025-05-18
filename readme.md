@@ -211,13 +211,6 @@ service nfs-kernel-server restart
 apt-get install qemu-kvm cloudstack-agent -y
 ```
 
-<<<<<<< HEAD
-cloudmonkey set url http://192.168.106.162:8080/client/api
-#example: cloudmonkey set url http://192.168.106.162:8080/client/api
-cloudmonkey set apikey uiauiaui
-cloudmonkey set secretkey uiauiaui
-cloudmonkey sync
-=======
 ### Configure KVM Virtualization management
 
 ```bash
@@ -279,8 +272,6 @@ iptables -A INPUT -s $NETWORK -m state --state NEW -p tcp --dport 8080 -j ACCEPT
 iptables -A INPUT -s $NETWORK -m state --state NEW -p tcp --dport 8443 -j ACCEPT
 iptables -A INPUT -s $NETWORK -m state --state NEW -p tcp --dport 9090 -j ACCEPT
 iptables -A INPUT -s $NETWORK -m state --state NEW -p tcp --dport 16514 -j ACCEPT
-#iptables -A INPUT -s $NETWORK -m state --state NEW -p udp --dport 3128 -j ACCEPT
-#iptables -A INPUT -s $NETWORK -m state --state NEW -p tcp --dport 3128 -j ACCEPT
 
 apt-get install iptables-persistent
 #just answer yes yes
@@ -417,4 +408,3 @@ cloudmonkey set apikey [apikey]
 cloudmonkey set secretkey [secretkey]
 cloudmonkey sync
 ```
->>>>>>> 6712e52bf3d14ab8bcaa7b6c7e9712faa0c12698
