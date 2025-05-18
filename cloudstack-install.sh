@@ -1,4 +1,6 @@
 
+#!/bin/bash
+set -e  # Exit on error
 
 # Host : 192.168.100.45/24
 # Gateway : 192.168.100.1
@@ -44,8 +46,9 @@ netplan apply
 #ifconfig
 #ping -c 4 google.com
 
+
 sudo mkdir -p /etc/apt/keyrings
-wget -O- http://packages.shapeblue.com/release.asc | gpg --dearmor | sudo tee /etc/apt/keyrings/cloudstack.gpg > /dev/null
+curl -fsSL http://packages.shapeblue.com/release.asc | gpg --dearmor | sudo tee /etc/apt/keyrings/cloudstack.gpg > /dev/null
 echo "deb [signed-by=/etc/apt/keyrings/cloudstack.gpg] http://packages.shapeblue.com/cloudstack/upstream/debian/4.18 /" | sudo tee /etc/apt/sources.list.d/cloudstack.list > /dev/null
 # check downloaded file
 # sudo nano /etc/apt/sources.list.d/cloudstack.list
