@@ -152,7 +152,7 @@ read API_KEY
 echo "Please input your secret key"
 read SECRET
 
-cloudmonkey set url $ADDRESS:8080/client/api
+cloudmonkey set url http://$ADDRESS:8080/client/api
 cloudmonkey set apikey $API_KEY
 cloudmonkey set secretkey $SECRET
 cloudmonkey sync
