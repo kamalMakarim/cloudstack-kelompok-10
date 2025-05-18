@@ -37,7 +37,6 @@ echo "network:
         stp: false
         forward-delay: 0" | sudo tee /etc/netplan/50-cloud-init.yaml > /dev/null && sudo chmod 600 /etc/netplan/50-cloud-init.yaml
 
-
 netplan generate
 netplan apply
 
@@ -45,11 +44,11 @@ netplan apply
 #ifconfig
 #ping -c 4 google.com
 
-mkdir -p /etc/apt/keyrings
+sudo mkdir -p /etc/apt/keyrings
 wget -O- http://packages.shapeblue.com/release.asc | gpg --dearmor | sudo tee /etc/apt/keyrings/cloudstack.gpg > /dev/null
-echo deb [signed-by=/etc/apt/keyrings/cloudstack.gpg] http://packages.shapeblue.com/cloudstack/upstream/debian/4.18 / > /etc/apt/sources.list.d/cloudstack.list
+echo "deb [signed-by=/etc/apt/keyrings/cloudstack.gpg] http://packages.shapeblue.com/cloudstack/upstream/debian/4.18 /" | sudo tee /etc/apt/sources.list.d/cloudstack.list > /dev/null
 # check downloaded file
-# nano /etc/apt/sources.list.d/cloudstack.list
+# sudo nano /etc/apt/sources.list.d/cloudstack.list
 # make sure there is
 # deb [signed-by=/etc/apt/keyrings/cloudstack.gpg] http://packages.shapeblue.com/cloudstack/upstream/debian/4.18 /
 
