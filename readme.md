@@ -1,23 +1,27 @@
 # Install and Configure Apache Cloudstack Private Cloud
 Group 10:
+
 Kamal Makarim Iskandar - 2206809841
+
 Kevin Naufal Aryanto -  2206062850
+
 Muhammad Billie Ellian - 2206059446
+
 Surya Dharmasaputra Soeroso - 2206827825
 
 ---
 
 ## Cloudstack Definition
-Apache CloudStack is an open-source software for cloud computing system that is designed to deploy and manage virtual machines on a large networks scale. As an IaaS (Infrastructure-as-a-Service) platform, cloudstack are highly available and highly scalable cloud computing platform.
+Apache CloudStack adalah perangkat lunak bersifat open source untuk sistem komputasi awan yang dirancang untuk menyebarkan dan mengelola mesin virtual dalam skala jaringan yang besar. Sebagai platform IaaS (Infrastructure-as-a-Service), CloudStack merupakan platform komputasi awan yang sangat available dan sangat scalable.
 
 ## Dependencies Used
 #### MySQL
-An open-source relational database management system (RDBMS) that uses Structured Query Language (SQL) for accessing, adding, and managing data in a database. MySQL is widely used for web applications and embedded database solutions due to its reliability, scalability, and ease of use.
+open-source relational database management system (RDBMS) yang menggunakan Structured Query Language (SQL) untuk mengakses, menambah, dan mengelola data dalam basis data. MySQL banyak digunakan untuk aplikasi web dan solusi basis data tertanam karena keandalan, skalabilitas, dan kemudahan penggunaannya.
 
-MySQL plays a critical role when managing an Apache CloudStack. MySQL served as the primary database backend for storing critical information such as users, computing node information and storage array information
+MySQL memainkan peran penting saat mengelola Apache CloudStack. MySQL berfungsi sebagai backend database utama untuk menyimpan informasi penting seperti pengguna, informasi node komputasi, dan informasi array penyimpanan.
 
 #### Kernel-based Virtual Machine (KVM)
-An open-source virtualization technology built into the Linux kernel. With KVM, Linux kernel can be functions as a hypervisor, enabling the creation and management of virtual machines (VMs). KVM is used because of its efficiency, scalability, and support for a variety of operating systems. KVM used to manage and allocate hardware resources such as CPU, Storage and Network with secure. Cloudstack uses KVM as an abstraction layer to protect against unsafe direct access to the embedded hardware.
+Sebuah teknologi virtualisasi open source yang dibangun ke dalam kernel Linux. Dengan KVM, kernel Linux dapat difungsikan sebagai hypervisor, yang memungkinkan pembuatan dan pengelolaan mesin virtual (VM). KVM digunakan karena efisiensi, skalabilitas, dan dukungannya untuk berbagai sistem operasi. KVM digunakan untuk mengelola dan mengalokasikan sumber daya perangkat keras seperti CPU, Storage, dan Jaringan dengan aman. Cloudstack menggunakan KVM sebagai lapisan abstraksi untuk melindungi dari akses langsung yang tidak aman ke perangkat keras yang tertanam.
 
 ---
 
