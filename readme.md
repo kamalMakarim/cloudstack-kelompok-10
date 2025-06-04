@@ -11,6 +11,9 @@ Surya Dharmasaputra Soeroso - 2206827825
 
 ---
 
+## Video
+https://youtu.be/32o2UVtfV0I
+
 ## Cloudstack Definition
 Apache CloudStack adalah perangkat lunak bersifat open source untuk sistem komputasi awan yang dirancang untuk menyebarkan dan mengelola mesin virtual dalam skala jaringan yang besar. Sebagai platform IaaS (Infrastructure-as-a-Service), CloudStack merupakan platform komputasi awan yang sangat available dan sangat scalable.
 
@@ -702,4 +705,5 @@ Compute offering menentukan spesifikasi sumber daya yang diberikan ke VM:
 - **State:** `Active`  
   Aturan firewall ini sedang berjalan dan berlaku. 
 
-
+## Reference
+https://github.com/AhmadRifqi86/cloudstack-install-and-configure/tree/main/cloudstack-install
